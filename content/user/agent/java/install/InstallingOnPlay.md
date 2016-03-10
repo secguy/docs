@@ -6,7 +6,7 @@ description: "Agent installation using the Play framework"
 
 ## Running Contrast From The Command Line With Activator
 Play makes adding JVM options to the application's JVM a little different than standard Java options syntax.
-In order for Play to pass the option properly, they must be prepended with ***-J***. As such, you'll need to add the following line to your Play startup command:
+In order for Play to pass the option properly, they must be prepended with **-J**. As such, you'll need to add the following line to your Play startup command:
 
 ``` 
 -J-javaagent:${DOWNLOADS}/contrast.jar
@@ -22,7 +22,7 @@ activator -J-javaagent:${DOWNLOADS}/contrast.jar ${YOUR_JVM_OPTIONS} ${YOUR_PLAY
 ```
 
 ## Running Contrast With JAVA_OPTS
-Older versions of Play have a known defect where they do not properly pass through the ***-J*** options. 
+Older versions of Play have a known defect where they do not properly pass through the **-J** options. 
 In order to work around this, it is recommended that you set ***JAVA_OPTS*** in the command line before calling activator: 
 
 ```
