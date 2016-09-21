@@ -13,7 +13,9 @@ You can combine the above command with tools like *grep* to search for commands,
 | contrast.activity | boolean to enable/disable the Contrast activity thread<br>**DEFAULT VALUE:** true</br> |
 | contrast.app.activity.period | Contrast app activity thread polling period in milliseconds<br>**DEFAULT VALUE:** 30000 (30 seconds, in milliseconds)</br> |
 | contrast.app.features | JSON from disk to use for app<br>**DEFAULT VALUE:** not used; this property must be set in order to be active</br> |
-| contrast.appname | Specify the name of a standalone or desktop application.<br>**DEFAULT VALUE:** determined by scanning web.xml</br> |
+| contrast.appname | Specify the name of a standalone or desktop application. Deprecated with the 3.3.2 release. <br>**DEFAULT VALUE:** determined by scanning web.xml</br> |
+| contrast.override.appname | Specify the name under which the application should be reported. Introduced with the 3.3.1 release. <br>**DEFAULT VALUE:** determined by scanning web.xml</br> |
+| contrast.standalone.appname | Specify the name of a standalone or desktop application. Activiating this flag will incur a startup penalty as more aggressive than standard instrumentation will be employed to correctly analyze the application environment. Introduced with the 3.3.1 release. <br>**DEFAULT VALUE:** not used; this property must be set in order to be active</br> |
 | contrast.appupdate | boolean to enable/disable threads that sends updates about applications to Team Server<br>**DEFAULT VALUE:** true</br> |
 | contrast.auto.license.assessment | boolean to allow Contrast to license an application on creation<br>**DEFAULT VALUE:** false</br> |
 | contrast.auto.license.protection | boolean to allow Contrast to license a server on creation<br>**DEFAULT VALUE:** false</br> |
