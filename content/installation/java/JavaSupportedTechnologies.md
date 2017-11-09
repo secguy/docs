@@ -1,5 +1,5 @@
 <!--
-title: "Supported Technologies"
+title: "Java Agent | Supported Technologies"
 description: "List of supported technologies"
 tags: "Java agent installation containers JDKs frameworks libraries support troubleshooting"
 -->
